@@ -1,0 +1,22 @@
+:root{
+    --bg-color: #02000B;
+    --rect-bg-blue: #030010;
+    --angular-pink: #C60FEA;
+    --angular-blue: #0A72C8;
+    --linear-purple: #3800DF;
+    --linear-blue: #1E0079;
+    --topic-blue: #0A72C8;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: white;
+    font-family: 'Source Serif Pro', serif;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
