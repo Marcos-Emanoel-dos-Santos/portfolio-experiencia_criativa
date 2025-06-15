@@ -15,9 +15,11 @@ body{
     font-family: 'Source Serif Pro', serif;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
 
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+a:hover{
+    text-decoration: underline;
 }

@@ -1,3 +1,9 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #neon{
     width: 100%;
     height:4px;
@@ -36,7 +42,7 @@
 .borda_descricao{
     position: relative;
     padding: 2px;
-    background-image: conic-gradient(from 45deg, var(--angular-pink), var(--angular-blue), var(--angular-pink));
+    background-image: conic-gradient(from 225deg, var(--angular-pink), var(--angular-blue), var(--angular-pink));
     border-radius: 8px;
     margin-left: -80px;
     width: 75%;
