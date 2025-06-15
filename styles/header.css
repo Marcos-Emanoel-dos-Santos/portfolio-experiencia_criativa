@@ -27,7 +27,7 @@ header h1{
 
 @media (max-width: 750px){
     header{
-        padding: 10px 0;
+        padding: 10px 0 20px 0;
         font-size: 0.88rem;
     }
     nav{
