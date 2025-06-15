@@ -1,3 +1,9 @@
+#neon{
+    width: 100%;
+    height:4px;
+    border-bottom: 1px solid var(--topic-blue);
+}
+
 #about_me{
     position: relative;
     width: 76%;
@@ -36,7 +42,7 @@
     width: 75%;
     max-height: 172px;
     z-index: 1;
-    display: flex; /* ADICIONADO: Ajuda o filho a reconhecer a altura corretamente. */
+    display: flex;
 }
 .descricao_about_me{
     background: var(--rect-bg-blue);
@@ -51,15 +57,16 @@
     margin-top: 1em;
 }
 
-#projetos{
+.secoes{
     width: 87.5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.projetos_secao{
+.secao{
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 10px;
@@ -79,12 +86,13 @@
 
 .conteudo{
     width: 49.5%;
+    background-color: var(--rect-bg-blue);
     padding: 10px;
     border: 3px solid var(--linear-blue);
     box-sizing: border-box;
 }
 
-.projeto_container{
+.conteudo_container{
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -119,6 +127,71 @@
     border: 1px solid var(--topic-blue);
 }
 
-@media (max-width: 910px) {
-    
+.descricao_disciplina{
+    padding-left: 16px;
+    border-left: 2px solid var(--topic-blue);
+}
+
+.container_interno ol{
+    list-style: circle;
+}
+
+.container_interno ol>li{
+    margin: 0 0 10px 16px;
+}
+
+
+@media (max-width: 600px) {
+    #about_me{
+        width: 95%;
+        margin: 2em 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img_perfil {
+        width: 10%;
+        min-width: 128px;
+        aspect-ratio: 1;
+        background-image: conic-gradient(from 45deg, var(--angular-pink), var(--angular-blue), var(--angular-pink));
+        border-radius: 50%;
+        padding: 4px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .foto_Marcos {
+        border-radius: 50%;
+        width: 100%;
+        aspect-ratio: 1;
+    }
+
+    .borda_descricao{
+        margin: 0 auto;
+        padding: 2px;
+        background-image: conic-gradient(from 45deg, var(--angular-pink), var(--angular-blue), var(--angular-pink));
+        border-radius: 8px;
+        width: 75%;
+        max-height: 172px;
+        display: flex;
+    }
+    .descricao_about_me{
+        background: var(--rect-bg-blue);
+        padding: 0.5rem;
+        border-radius: 6px;
+        color: white;
+        overflow-y: auto;
+    }
+    .titulo{
+        text-align: center;
+    }
+
+    .conteudo{
+        width: 100%;
+        padding: 10px;
+        border: 3px solid var(--linear-blue);
+        box-sizing: border-box;
+    }
 }
